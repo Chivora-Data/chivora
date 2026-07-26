@@ -38,7 +38,7 @@ export const INSIGHTS: InsightArticle[] = [
       "### 4. Testing is treated as a one-time event",
       "A single migration test run — even if it passes — is not enough. A robust migration programme runs at least two full mock migrations before cutover: the first to find the problems, the second to prove the fixes worked and to rehearse the cutover timing. Projects that skip the second mock run regularly discover at cutover that the fix introduced a new problem.",
       "### 5. Reconciliation is not defined in advance",
-      "How will you know when the migration has succeeded? This sounds like an obvious question, but on the majority of projects we encounter, there is no pre-agreed reconciliation framework — no defined tolerance, no sign-off checklist, no named person with the authority to say ‘the data is good enough to go live.’",
+      "How will you know when the migration has succeeded? This sounds like an obvious question, but on the majority of projects we encounter, there is no pre-agreed reconciliation framework — no defined tolerance, no sign-off checklist, no named person with the authority to say 'the data is good enough to go live.'",
       "Without that framework, the cutover decision becomes subjective. And subjective decisions under go-live pressure almost always go in the same direction: the business goes live with data it is not confident in, and spends the next three months firefighting.",
       "### 6. Nobody owns it end to end",
       "This is the root cause underneath all the others. Data migration done well requires a single, accountable owner who is present from discovery through to post-go-live stabilisation — someone whose only job on the project is to ensure that data moves correctly. When that ownership is distributed across multiple people with competing priorities, decisions fall through the gaps.",
@@ -66,7 +66,7 @@ export const INSIGHTS: InsightArticle[] = [
     category: "Technical",
     published: true,
     readTime: "7 min read",
-    excerpt: "Choosing the right migration tooling for your source system.",
+    excerpt: "DMF handles standard D365 entities well but struggles with complex transforms. KingswaySoft gives finer control for demanding source systems. Here's how we choose between them.",
     body: [
       "D365's native Data Management Framework (DMF/DIXF) is the default starting point for most migrations — it's built into the platform, handles standard entities well, and requires no additional licensing. Its limits show up with complex transformations, high data volumes, or source systems that don't export cleanly into DMF's expected format.",
       "KingswaySoft's SSIS-based integration toolkit is the tool we reach for most often on complex migrations. It handles transformation logic that DMF struggles with, supports a wide range of source connectors, and gives much finer control over error handling and retry logic — at the cost of needing SSIS development skill on the team.",
@@ -80,7 +80,7 @@ export const INSIGHTS: InsightArticle[] = [
     category: "Technical",
     published: true,
     readTime: "5 min read",
-    excerpt: "Why open items are the hardest part of any ledger migration.",
+    excerpt: "Migrating open AR/AP as flat balances loses the document structure D365 needs for matching and ageing. Here's what to migrate instead — and how to reconcile it correctly.",
     body: [
       "Closed transactions are the easy part of any AR/AP migration — they're historical record, and once mapped correctly they don't need to behave like anything other than a static number. Open items are different: they need to behave correctly in the target system after go-live, including matching, ageing and payment application.",
       "The most common failure mode is migrating open items as flat balances without their underlying document structure — invoice, credit note, payment, and the links between them. Once that structure is lost, ageing reports and statement runs in the new system produce numbers that don't match what customers and vendors expect.",
