@@ -5,7 +5,7 @@ import { ServicesGrid } from "@/components/home/ServicesGrid";
 
 export const metadata: Metadata = {
   title: "Services | Chivora — D365 Data Migration Specialists",
-  description: "Nine ways to engage Chivora for your D365 data migration.",
+  description: "End-to-end migration, health checks, rescue engagements, retainers and more — nine ways to engage Chivora for your Dynamics 365 data migration.",
 };
 
 export default function ServicesIndexPage() {
