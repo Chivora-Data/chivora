@@ -48,8 +48,8 @@ export default async function SourceSystemPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Source Systems", item: "/source-systems" },
-      { "@type": "ListItem", position: 2, name: system.name, item: `/source-systems/${system.slug}` },
+      { "@type": "ListItem", position: 1, name: "Source Systems", item: "https://chivora.co.uk/source-systems" },
+      { "@type": "ListItem", position: 2, name: system.name, item: `https://chivora.co.uk/source-systems/${system.slug}` },
     ],
   };
 
