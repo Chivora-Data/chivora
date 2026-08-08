@@ -10,6 +10,7 @@ import { CASE_STUDIES } from "@/lib/content/caseStudies";
 export const metadata: Metadata = {
   title: "Case Studies | Chivora — D365 Data Migration Specialists",
   description: "See how Chivora has migrated GL, AR/AP, Fixed Assets and master data from SAP, Oracle, Sage and NAV into Dynamics 365 — representative scope from real engagements.",
+  alternates: { canonical: "/case-studies" },
 };
 
 // NOTE: CASE_STUDIES in lib/content/caseStudies.ts are modelled examples,

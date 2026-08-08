@@ -19,6 +19,7 @@ export async function generateMetadata({
   return {
     title: `${service.name} | Chivora — D365 Data Migration Specialists`,
     description: `${service.promise} Chivora specialises exclusively in D365 data migration.`,
+    alternates: { canonical: `/services/${service.slug}` },
   };
 }
 

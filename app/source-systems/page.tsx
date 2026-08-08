@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Source Systems | Chivora — D365 Data Migration Specialists",
   description:
     "We migrate from SAP, Oracle, Sage, Dynamics NAV, BPCS, IFS and Access Dimensions into Dynamics 365.",
+  alternates: { canonical: "/source-systems" },
 };
 
 export default function SourceSystemsIndexPage() {

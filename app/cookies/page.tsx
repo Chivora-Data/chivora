@@ -4,6 +4,7 @@ import { LegalPageLayout } from "@/components/legal/LegalPageLayout";
 export const metadata: Metadata = {
   title: "Cookie Policy | Chivora",
   description: "How Chivora uses cookies on this site.",
+  alternates: { canonical: "/cookies" },
 };
 
 export default function CookiesPage() {

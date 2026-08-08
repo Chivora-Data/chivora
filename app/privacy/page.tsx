@@ -4,6 +4,7 @@ import { LegalPageLayout } from "@/components/legal/LegalPageLayout";
 export const metadata: Metadata = {
   title: "Privacy Policy | Chivora",
   description: "How Chivora handles personal data.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

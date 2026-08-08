@@ -13,6 +13,7 @@ import { Check, X } from "lucide-react";
 export const metadata: Metadata = {
   title: "About | Chivora — D365 Data Migration Specialists",
   description: "Chivora is a specialist D365 data migration team — not a generalist SI. We own the data workstream end-to-end, from SAP, Oracle, Sage and NAV into D365 F&O and CE.",
+  alternates: { canonical: "/about" },
 };
 
 const WHAT_WE_ARE = [

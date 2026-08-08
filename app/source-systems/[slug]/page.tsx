@@ -19,6 +19,7 @@ export async function generateMetadata({
   return {
     title: `${system.name} to Dynamics 365 Data Migration | Chivora`,
     description: system.promise,
+    alternates: { canonical: `/source-systems/${system.slug}` },
   };
 }
 

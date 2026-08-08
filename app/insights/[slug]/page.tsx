@@ -22,6 +22,7 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Chivora Insights`,
     description: article.excerpt,
+    alternates: { canonical: `/insights/${article.slug}` },
   };
 }
 

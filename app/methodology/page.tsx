@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Methodology | Chivora — D365 Data Migration Specialists",
   description:
     "Six phases, no improvisation — how Chivora runs every D365 data migration from discovery to stabilisation.",
+  alternates: { canonical: "/methodology" },
 };
 
 export default function MethodologyPage() {

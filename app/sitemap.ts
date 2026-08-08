@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/case-studies', priority: 0.8 },
     { url: '/insights', priority: 0.7 },
     { url: '/contact', priority: 0.7 },
-    { url: '/capability-statement', priority: 0.6 },
     { url: '/services/end-to-end-data-migration', priority: 0.9 },
     { url: '/services/data-migration-health-check', priority: 0.9 },
     { url: '/services/migration-rescue', priority: 0.9 },

@@ -91,6 +91,7 @@ const GROUPS = [
 export const metadata: Metadata = {
   title: "FAQ | Chivora — D365 Data Migration Specialists",
   description: "Answers to common questions about Chivora's D365 data migration services.",
+  alternates: { canonical: "/faq" },
 };
 
 export default function FaqPage() {

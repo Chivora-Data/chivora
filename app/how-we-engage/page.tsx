@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: "How We Engage | Chivora — D365 Data Migration Specialists",
   description:
     "How Chivora structures engagements, prices its work, and runs the commercial process for D365 data migration.",
+  alternates: { canonical: "/how-we-engage" },
 };
 
 const SI_POINTS = [

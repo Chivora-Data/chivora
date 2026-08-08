@@ -4,6 +4,7 @@ import { LegalPageLayout } from "@/components/legal/LegalPageLayout";
 export const metadata: Metadata = {
   title: "Terms & Conditions | Chivora",
   description: "Terms governing use of this site and Chivora's services.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

@@ -9,6 +9,7 @@ import { ContactForm } from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "Contact | Chivora — D365 Data Migration Specialists",
   description: "Book a discovery call with Chivora to talk about your D365 data migration.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

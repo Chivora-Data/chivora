@@ -25,9 +25,13 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.chivora.co.uk"),
   title: "Chivora — D365 Data Migration Specialists",
   description:
     "We specialise exclusively in Microsoft Dynamics 365 data migration — moving critical business data from SAP, Oracle, Sage, NAV, BPCS, IFS and Access Dimensions into D365 F&O and CE. Cleanly. Completely. On time.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({

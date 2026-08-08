@@ -10,6 +10,7 @@ import { getPublishedInsights } from "@/lib/content/insights";
 export const metadata: Metadata = {
   title: "Insights | Chivora — D365 Data Migration Specialists",
   description: "Practical guides on D365 data migration — tooling choices, common failure modes, AR/AP cut-over, and what separates migrations that go wrong from ones that don't.",
+  alternates: { canonical: "/insights" },
 };
 
 export default function InsightsIndexPage() {
