@@ -23,6 +23,13 @@ export async function generateMetadata({
     title: `${article.title} | Chivora Insights`,
     description: article.excerpt,
     alternates: { canonical: `/insights/${article.slug}` },
+    openGraph: {
+      title: article.title,
+      description: article.excerpt,
+      url: `/insights/${article.slug}`,
+      type: "article",
+      authors: article.author ? [article.author] : undefined,
+    },
   };
 }
 
@@ -35,8 +42,38 @@ export default async function InsightArticlePage({
   const article = getInsightBySlug(slug);
   if (!article) notFound();
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.excerpt,
+    author: {
+      "@type": "Person",
+      name: article.author ?? "Sunday Ukwungwu",
+      url: "https://www.linkedin.com/in/sundayukwungwu/",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Chivora",
+      url: "https://www.chivora.co.uk",
+    },
+    url: `https://www.chivora.co.uk/insights/${article.slug}`,
+    mainEntityOfPage: `https://www.chivora.co.uk/insights/${article.slug}`,
+  };
+
+  function escape(obj: object) {
+    return JSON.stringify(obj)
+      .replace(/</g, "\\u003c")
+      .replace(/>/g, "\\u003e")
+      .replace(/&/g, "\\u0026");
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: escape(articleJsonLd) }}
+      />
       <Nav />
       <main className="flex-1">
         <article className="mx-auto max-w-4xl px-6 py-16">

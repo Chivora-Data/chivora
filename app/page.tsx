@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { LiveMigration } from "@/components/hero/LiveMigration";
@@ -18,9 +19,52 @@ import { ToolsRow } from "@/components/home/ToolsRow";
 import { InsightsTeaser } from "@/components/home/InsightsTeaser";
 import { PreFooterCTA } from "@/components/home/PreFooterCTA";
 
+export const metadata: Metadata = {
+  openGraph: {
+    title: "Chivora — D365 Data Migration Specialists",
+    description:
+      "We specialise exclusively in Microsoft Dynamics 365 data migration — moving critical business data from SAP, Oracle, Sage, NAV, BPCS, IFS and Access Dimensions into D365 F&O and CE.",
+    url: "/",
+    type: "website",
+  },
+};
+
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Chivora",
+  description:
+    "Specialist Microsoft Dynamics 365 data migration — moving critical business data from SAP, Oracle, Sage, NAV, BPCS, IFS and Access Dimensions into D365 F&O and CE.",
+  url: "https://www.chivora.co.uk",
+  telephone: "+441514534230",
+  areaServed: { "@type": "Country", name: "United Kingdom" },
+  serviceType: "D365 Data Migration",
+  knowsAbout: [
+    "Microsoft Dynamics 365 Data Migration",
+    "D365 Finance & Operations",
+    "D365 Customer Engagement",
+    "SAP to D365 Migration",
+    "Oracle to D365 Migration",
+    "Sage to D365 Migration",
+    "Dynamics NAV to D365 Migration",
+  ],
+  sameAs: ["https://www.linkedin.com/company/chivoraconsulting/"],
+};
+
+function escapeJsonLd(obj: object) {
+  return JSON.stringify(obj)
+    .replace(/</g, "\\u003c")
+    .replace(/>/g, "\\u003e")
+    .replace(/&/g, "\\u0026");
+}
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: escapeJsonLd(orgJsonLd) }}
+      />
       <Nav />
 
       <main className="flex-1">

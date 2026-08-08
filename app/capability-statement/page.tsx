@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: "Capability Statement | Chivora — D365 Data Migration Specialists",
   description:
     "Request Chivora's capability statement and get a concise overview of our Dynamics 365 data migration services, methodology, and source systems covered.",
+  alternates: { canonical: "/capability-statement" },
+  openGraph: {
+    title: "Capability Statement | Chivora",
+    description:
+      "A compact overview of Chivora's D365 data migration services, methodology, source systems and typical engagement scope.",
+    url: "/capability-statement",
+    type: "website",
+  },
 };
 
 export default function CapabilityStatementPage() {

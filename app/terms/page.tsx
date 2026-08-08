@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Terms & Conditions | Chivora",
   description: "Terms governing use of this site and Chivora's services.",
   alternates: { canonical: "/terms" },
+  robots: { index: false, follow: false },
 };
 
 export default function TermsPage() {

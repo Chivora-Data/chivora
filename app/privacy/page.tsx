@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Chivora",
   description: "How Chivora handles personal data.",
   alternates: { canonical: "/privacy" },
+  robots: { index: false, follow: false },
 };
 
 export default function PrivacyPage() {

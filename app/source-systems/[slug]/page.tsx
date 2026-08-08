@@ -20,6 +20,12 @@ export async function generateMetadata({
     title: `${system.name} to Dynamics 365 Data Migration | Chivora`,
     description: system.promise,
     alternates: { canonical: `/source-systems/${system.slug}` },
+    openGraph: {
+      title: `${system.name} to Dynamics 365 Data Migration | Chivora`,
+      description: system.promise,
+      url: `/source-systems/${system.slug}`,
+      type: "website",
+    },
   };
 }
 
@@ -60,6 +66,19 @@ export default async function SourceSystemPage({
       .replace(/>/g, '\\u003e')
       .replace(/&/g, '\\u0026');
 
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: system.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <>
       <script
@@ -69,6 +88,10 @@ export default async function SourceSystemPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: escape(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: escape(faqLd) }}
       />
       <SourceSystemPageTemplate system={system} />
     </>
