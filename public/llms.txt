@@ -1,0 +1,42 @@
+# Chivora — D365 Data Migration Specialists
+
+> Chivora is a UK consultancy that specialises exclusively in Microsoft Dynamics 365
+> data migration. We move critical business data from SAP, Oracle, Sage, Dynamics NAV,
+> BPCS, IFS and Access Dimensions into D365 Finance & Operations (F&O) and Customer
+> Engagement (CE). We treat data migration as a discipline, not a task — with
+> reconciliation, cutover planning and audit-ready evidence built into every engagement.
+
+Contact: info@chivora.co.uk | +44 151 453 4230 | https://www.chivora.co.uk/contact
+LinkedIn: https://www.linkedin.com/company/chivoraconsulting/
+Area served: United Kingdom (remote and on-site)
+
+## Services
+
+- [End-to-End Data Migration](https://www.chivora.co.uk/services/end-to-end-data-migration): Full-lifecycle D365 migration — strategy, mapping, transformation, mock loads, cutover and reconciliation.
+- [Data Migration Health Check](https://www.chivora.co.uk/services/data-migration-health-check): Independent review of an in-flight D365 migration workstream with a prioritised risk report.
+- [Migration Rescue](https://www.chivora.co.uk/services/migration-rescue): Recovery of failing or stalled D365 migrations.
+- [Post-Go-Live Retainer](https://www.chivora.co.uk/services/post-go-live-retainer): Ongoing data support after D365 go-live.
+- [Data Cleansing & Enrichment](https://www.chivora.co.uk/services/data-cleansing-enrichment): Source-data quality remediation before migration.
+- [Data Migration Project Management](https://www.chivora.co.uk/services/data-migration-project-management): Dedicated leadership of the migration workstream.
+- [Integration & Interface Services](https://www.chivora.co.uk/services/integration-interface-services): Interfaces between D365 and surrounding systems.
+- [Data Governance & MDM](https://www.chivora.co.uk/services/data-governance-mdm): Master data management and governance for D365 estates.
+- [Reconciliation & Analytics](https://www.chivora.co.uk/services/reconciliation-analytics): Migration reconciliation reporting and audit evidence.
+
+## Source systems we migrate from
+
+- [SAP to D365](https://www.chivora.co.uk/source-systems/sap)
+- [Oracle to D365](https://www.chivora.co.uk/source-systems/oracle)
+- [Sage to D365](https://www.chivora.co.uk/source-systems/sage)
+- [Dynamics NAV to D365](https://www.chivora.co.uk/source-systems/dynamics-nav)
+- [BPCS to D365](https://www.chivora.co.uk/source-systems/bpcs)
+- [IFS to D365](https://www.chivora.co.uk/source-systems/ifs)
+- [Access Dimensions to D365](https://www.chivora.co.uk/source-systems/access-dimensions)
+
+## Key pages
+
+- [Methodology](https://www.chivora.co.uk/methodology): Chivora's migration methodology.
+- [How We Engage](https://www.chivora.co.uk/how-we-engage): Engagement models and commercial process.
+- [Case Studies](https://www.chivora.co.uk/case-studies): Anonymised delivery examples (manufacturing SAP→F&O, distribution Sage→F&O, professional services NAV→CE, retail Oracle→F&O).
+- [FAQ](https://www.chivora.co.uk/faq): Common questions about D365 data migration.
+- [Insights](https://www.chivora.co.uk/insights): Articles including "Why data migration fails on D365 projects" and "DMF vs KingswaySoft vs Scribe".
+- [Capability Statement](https://www.chivora.co.uk/capability-statement): Request a one-page overview of Chivora's capabilities.

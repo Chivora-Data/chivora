@@ -92,11 +92,41 @@ export const metadata: Metadata = {
   title: "FAQ | Chivora — D365 Data Migration Specialists",
   description: "Answers to common questions about Chivora's D365 data migration services.",
   alternates: { canonical: "/faq" },
+  openGraph: {
+    title: "FAQ | Chivora",
+    description:
+      "Answers to common questions about D365 data migration — pricing, tooling, mock migrations, source systems and getting started.",
+    url: "/faq",
+    type: "website",
+  },
 };
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: GROUPS.flatMap((group) =>
+    group.items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    }))
+  ),
+};
+
+function escapeJsonLd(obj: object) {
+  return JSON.stringify(obj)
+    .replace(/</g, "\\u003c")
+    .replace(/>/g, "\\u003e")
+    .replace(/&/g, "\\u0026");
+}
 
 export default function FaqPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: escapeJsonLd(faqJsonLd) }}
+      />
       <Nav />
       <main className="flex-1">
         <section className="mx-auto max-w-3xl px-6 pt-16 pb-4 text-center">
