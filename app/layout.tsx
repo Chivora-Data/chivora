@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import "./globals.css";
+
+// Set NEXT_PUBLIC_GA_ID (G-XXXXXXXXXX) in the hosting environment to enable GA4.
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -66,6 +70,7 @@ export default function RootLayout({
         {children}
         <ChatWidget />
       </body>
+      {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
     </html>
   );
 }
