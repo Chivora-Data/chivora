@@ -4,8 +4,8 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { ChatWidget } from "@/components/chat/ChatWidget";
 import "./globals.css";
 
-// Set NEXT_PUBLIC_GA_ID (G-XXXXXXXXXX) in the hosting environment to enable GA4.
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+// GA4 measurement ID for www.chivora.co.uk; override via NEXT_PUBLIC_GA_ID if needed.
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-NJEW1SCM66";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
